@@ -1,0 +1,347 @@
+.hero {
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 8%;
+  gap: 10px;
+  margin-top: -50px;
+}
+
+
+.hero-left {
+  flex: 1;
+   
+}
+
+
+.hero-left h3 {
+  font-size: 22px;
+  color: #38bdf8;
+}
+
+
+.hero-left h1 {
+  font-size: 60px;
+  margin: 5px 0;
+}
+
+
+.hero-left h2 {
+  font-size: 35px;
+  color: #94a3b8;
+  margin: -10px 0;
+}
+
+
+.hero-left p {
+  margin: 22px 0;
+  line-height: 1.8;
+  max-width: 550px;
+  color:#cbd5e1;
+}
+
+
+.hero-buttons {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.btn,
+.btn-outline {
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+
+.btn {
+  background: #38bdf8;
+  color: black;
+}
+
+
+.btn:hover {
+  background: white;
+}
+
+
+.btn-outline {
+  border: 2px solid #38bdf8;
+  color: white;
+}
+
+
+.btn-outline:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+
+
+.social-icons {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+}
+
+
+.social-icons a {
+  color: white;
+  font-size: 28px;
+  transition: .3s;
+}
+
+
+.social-icons a:hover {
+  color: #38bdf8;
+}
+
+
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.hero-right img {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #38bdf8;
+  box-shadow: 0 0 20px rgba(56,170,180,.5);
+}
+
+
+
+/* ==========================
+        Tablet Responsive
+========================== */
+
+@media(max-width:992px){
+
+  .hero{
+    padding:80px 6%;
+    gap:40px;
+  }
+
+
+  .hero-left h1{
+    font-size:48px;
+  }
+
+
+  .hero-left h2{
+    font-size:30px;
+  }
+
+
+  .hero-right img{
+    width:320px;
+    height:320px;
+  }
+
+}
+
+
+/* ==========================
+        Mobile Responsive
+========================== */
+
+@media(max-width:768px){
+
+  .hero{
+
+    min-height:auto;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:50px 5%;
+
+    gap:40px;
+
+    position:relative;
+
+  }
+
+
+  .hero-right{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    order:1;
+
+  }
+
+
+  .hero-left{
+
+    width:100%;
+
+    order:2;
+
+  }
+
+
+  .hero-left h3{
+
+    font-size:20px;
+
+  }
+
+
+  .hero-left h1{
+
+    font-size:38px;
+
+    margin:10px 0;
+
+  }
+
+
+  .hero-left h2{
+
+    font-size:24px;
+
+  }
+
+
+  .hero-left p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    margin:20px auto;
+
+  }
+
+
+
+  .hero-buttons{
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    width:100%;
+
+    gap:15px;
+
+    margin-top:25px;
+
+  }
+
+
+
+  .btn,
+  .btn-outline{
+
+    width:90%;
+
+    padding:14px;
+
+  }
+
+
+
+  .social-icons{
+
+    justify-content:center;
+
+    margin-top:25px;
+
+  }
+
+
+
+  .social-icons a{
+
+    font-size:24px;
+
+  }
+
+
+
+  .hero-right img{
+    width:260px;
+    height:260px;
+    margin-top: 65px;
+    border-width:5px;
+
+  }
+
+
+}
+
+
+
+/* ==========================
+        Small Mobile
+========================== */
+
+
+@media(max-width:480px){
+
+
+  .hero{
+
+    padding:40px 4%;
+
+  }
+
+
+
+  .hero-right img{
+
+    width:220px;
+
+    height:220px;
+
+  }
+
+
+
+  .hero-left h1{
+
+    font-size:32px;
+
+  }
+
+
+
+  .hero-left h2{
+
+    font-size:22px;
+
+  }
+
+
+
+  .hero-left p{
+
+    font-size:14px;
+
+  }
+
+
+
+}
