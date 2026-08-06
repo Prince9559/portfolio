@@ -9,11 +9,8 @@ function Projects() {
       </div>
 
       <div className="projects-container">
-        {/* Chat with PDF */}
-
         <div className="project-card">
           <h3>🤖 Chat with PDF</h3>
-
           <p>
             An AI-powered Full Stack application that allows users to upload PDF
             documents and ask questions in natural language using Google Gemini
@@ -22,7 +19,6 @@ function Projects() {
           </p>
 
           <h4>Tech Stack</h4>
-
           <div className="tech">
             <span>React.js</span>
             <span>Node.js</span>
@@ -33,24 +29,15 @@ function Projects() {
           </div>
 
           <div className="project-buttons">
-            <a
-              href="https://chat-with-pdf-yq98.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://chat-with-pdf-yq98.vercel.app/"target="_blank"rel="noreferrer">
               Live Demo
             </a>
-            <a
-              href="https://github.com/Prince9559/CHAT_WITH_PDF"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/Prince9559/CHAT_WITH_PDF"target="_blank"rel="noreferrer">
               GitHub
             </a>
           </div>
         </div>
 
-        {/* Ecommerce */}
 
         <div className="project-card">
           <h3>🛒 E-Commerce Website</h3>
@@ -70,24 +57,15 @@ function Projects() {
           </div>
 
           <div className="project-buttons">
-            <a
-              href="https://fontend-peach.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Live Demo
+            <a href="https://fontend-peach.vercel.app/" target="_blank" rel="noreferrer">
+            Live Demo
             </a>
-            <a
-              href="https://github.com/Prince9559/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
+            <a href="https://github.com/Prince9559/" target="_blank" rel="noreferrer">
+            GitHub
             </a>
           </div>
         </div>
 
-        {/* School */}
 
         <div className="project-card">
           <h3>🏫 School Management System</h3>
@@ -108,24 +86,15 @@ function Projects() {
           </div>
 
           <div className="project-buttons">
-            <a
-              href="https://raj-school-f5my.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://raj-school-f5my.vercel.app/" target="_blank" rel="noreferrer">
               Live Demo
             </a>
-            <a
-              href="https://github.com/Prince9559/school-management/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/Prince9559/school-management/" target="_blank" rel="noreferrer">
               GitHub
             </a>
           </div>
         </div>
 
-        {/* Coaching */}
 
         <div className="project-card">
           <h3>🌐 Coaching Website</h3>
@@ -146,18 +115,10 @@ function Projects() {
           </div>
 
           <div className="project-buttons">
-            <a
-              href="https://developer-pi-five.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://developer-pi-five.vercel.app/" target="_blank" rel="noreferrer">
               Live Demo
             </a>
-            <a
-              href="https://github.com/Prince9559/developer"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/Prince9559/developer" target="_blank"rel="noreferrer">
               GitHub
             </a>
           </div>

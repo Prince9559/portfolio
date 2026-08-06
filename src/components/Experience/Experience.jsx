@@ -10,9 +10,6 @@ function Experience() {
       </div>
 
       <div className="experience-container">
-
-        {/* Experience 1 */}
-
         <div className="experience-card">
 
           <div className="experience-header">
@@ -44,8 +41,6 @@ function Experience() {
           </div>
 
         </div>
-
-        {/* Experience 2 */}
 
         <div className="experience-card">
 

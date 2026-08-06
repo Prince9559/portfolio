@@ -3,24 +3,20 @@ import "./Navbar.css";
 import profile from "../../assets/images/prince.png"; // Update path if needed
 
 function Navbar() {
+
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Helper function to close mobile menu
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
-  // Close menu on scroll
   useEffect(() => {
     const handleScroll = () => {
       setMenuOpen(false);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => {window.removeEventListener("scroll", handleScroll);};
   }, []);
 
   return (
@@ -30,12 +26,7 @@ function Navbar() {
         <h2>Prince Kumar</h2>
       </div>
 
-      <div
-        className="hamburger"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        ☰
-      </div>
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}> ☰</div>
 
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>
         <li><a href="#home" onClick={closeMenu}>Home</a></li>

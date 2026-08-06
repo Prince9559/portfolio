@@ -4,30 +4,33 @@
     color:#fff;
 }
 
-
 .education-title{
     text-align:center;
     margin-bottom:60px;
 }
 
-
+@keyframes fadeAnimation {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
 .education-title h2{
     font-size:42px;
+    border-radius: 10px 0px 10px 0px;
+    margin-top: -115px;
+    background:linear-gradient(to right,#755f0f57,#6b48e88e);
+    animation: fadeAnimation 2s infinite;
     margin-bottom:10px;
 }
-
 
 .education-title p{
     color:#94a3b8;
     font-size:18px;
 }
 
-
 .education-container{
     display:grid;
     gap:30px;
 }
-
 
 .education-card{
     background:#1e293b;
@@ -37,12 +40,10 @@
     transition:.3s;
 }
 
-
 .education-card:hover{
     transform:translateY(-8px);
     box-shadow:0 15px 35px rgba(56,189,248,.25);
 }
-
 
 .education-card h3{
     color:#38bdf8;
@@ -50,12 +51,10 @@
     font-size:24px;
 }
 
-
 .education-card h4{
     color:#fff;
     margin-bottom:10px;
 }
-
 
 .education-card span{
     display:inline-block;
@@ -64,63 +63,48 @@
     font-weight:600;
 }
 
-
 .education-card p{
     line-height:1.8;
     color:#cbd5e1;
 }
 
 
-
-/* ==========================
-        Tablet Responsive
-========================== */
-
 @media(max-width:992px){
-
     .education{
         padding:80px 6%;
     }
-
+       
+    .education-title h2{
+        font-size:32px;
+        margin-top: -35px;
+    }
 
     .education-container{
         gap:25px;
     }
 
-
     .education-card{
         padding:25px;
     }
-
 }
 
-
-
-/* ==========================
-        Mobile Responsive
-========================== */
-
 @media(max-width:768px){
-
     .education{
         padding:60px 5%;
     }
-
 
     .education-title{
         margin-bottom:40px;
     }
 
-
     .education-title h2{
         font-size:32px;
+        margin-top: -40px;
     }
-
 
     .education-title p{
         font-size:15px;
     }
-
 
     .education-card{
         padding:22px;
@@ -128,21 +112,17 @@
         border-radius:14px;
     }
 
-
     .education-card h3{
         font-size:21px;
     }
-
 
     .education-card h4{
         font-size:16px;
     }
 
-
     .education-card span{
         font-size:14px;
     }
-
 
     .education-card p{
         font-size:14px;
@@ -151,36 +131,25 @@
 
 }
 
-
-
-/* ==========================
-        Small Mobile
-========================== */
-
 @media(max-width:480px){
 
     .education{
         padding:50px 4%;
     }
 
-
     .education-title h2{
         font-size:26px;
     }
-
 
     .education-card{
         padding:18px;
     }
 
-
     .education-card h3{
         font-size:19px;
     }
 
-
     .education-card p{
         font-size:13px;
     }
-
 }

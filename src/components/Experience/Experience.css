@@ -4,16 +4,23 @@
     color:#fff;
 }
 
-
 .experience-title{
     text-align:center;
     margin-bottom:60px;
 }
 
-
+@keyframes fadeAnimation {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
 .experience-title h2{
     font-size:42px;
+    margin-top: -115px;
+    border-radius: 0px 10px 0px 10px;
     margin-bottom:10px;
+    background:linear-gradient(to right,#6b48e88e,#755f0f57);
+    animation: fadeAnimation 2s infinite;
+
 }
 
 
@@ -67,24 +74,20 @@
     font-weight:600;
 }
 
-
 .experience-card h4{
     margin:10px 0;
     color:#fff;
 }
-
 
 .location{
     color:#94a3b8;
     margin-bottom:15px;
 }
 
-
 .experience-card p{
     line-height:1.8;
     color:#cbd5e1;
 }
-
 
 .experience-tech{
     display:flex;
@@ -92,7 +95,6 @@
     gap:10px;
     margin-top:20px;
 }
-
 
 .experience-tech span{
     background:rgba(56,189,248,.15);
@@ -103,17 +105,11 @@
     transition:.3s;
 }
 
-
 .experience-tech span:hover{
     background:#38bdf8;
     color:#0f172a;
 }
 
-
-
-/* ==========================
-        Tablet Responsive
-========================== */
 
 @media(max-width:992px){
 
@@ -121,6 +117,12 @@
         padding:80px 6%;
     }
 
+
+    
+    .experience-title h2{
+        font-size:32px;
+        margin-top: -35px;
+    }
 
     .experience-container{
         gap:25px;
@@ -133,11 +135,6 @@
 
 }
 
-
-
-/* ==========================
-        Mobile Responsive
-========================== */
 
 @media(max-width:768px){
 
@@ -155,11 +152,9 @@
         font-size:32px;
     }
 
-
     .experience-title p{
         font-size:15px;
     }
-
 
     .experience-card{
         padding:22px;
@@ -190,11 +185,9 @@
         font-size:17px;
     }
 
-
     .location{
         font-size:14px;
     }
-
 
     .experience-card p{
         font-size:14px;
@@ -215,38 +208,27 @@
 
 }
 
-
-
-/* ==========================
-        Small Mobile
-========================== */
-
 @media(max-width:480px){
 
     .experience{
         padding:50px 4%;
     }
 
-
     .experience-title h2{
         font-size:26px;
     }
-
 
     .experience-card{
         padding:18px;
     }
 
-
     .experience-header h3{
         font-size:19px;
     }
 
-
     .experience-card p{
         font-size:13px;
     }
-
 
     .experience-tech span{
         font-size:12px;

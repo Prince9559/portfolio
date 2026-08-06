@@ -3,35 +3,37 @@
   background: #0f172a;
   color: #fff;
 }
-
-
 .projects-title {
   text-align: center;
   margin-bottom: 60px;
 }
 
+@keyframes fadeAnimation {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
 
 .projects-title h2 {
   font-size: 42px;
   margin-bottom: 10px;
+  border-radius: 10px 0px 10px 0px;
+  background:linear-gradient(to right,#755f0f57,#6b48e88e);
+  animation: fadeAnimation 2s infinite;
   color: #fff;
-}
+  margin-top: -115px;
 
+}
 
 .projects-title p {
   color: #94a3b8;
   font-size: 18px;
 }
 
-
-
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 30px;
 }
-
-
 
 .project-card {
   background: #1e293b;
@@ -42,7 +44,6 @@
   position: relative;
   overflow: hidden;
 }
-
 
 .project-card::before {
   content:"";
@@ -55,11 +56,9 @@
   transition:.5s;
 }
 
-
 .project-card:hover::before{
   left:0;
 }
-
 
 .project-card:hover{
   transform:translateY(-10px);
@@ -67,14 +66,11 @@
   border-color:#38bdf8;
 }
 
-
-
 .project-card h3{
   font-size:24px;
   margin-bottom:18px;
   color:#38bdf8;
 }
-
 
 .project-card p{
   color:#cbd5e1;
@@ -82,14 +78,11 @@
   margin-bottom:22px;
 }
 
-
 .project-card h4{
   color:#fff;
   margin-bottom:15px;
   font-size:18px;
 }
-
-
 
 .tech{
   display:flex;
@@ -97,8 +90,6 @@
   gap:10px;
   margin-bottom:25px;
 }
-
-
 
 .tech span{
   background:rgba(56,189,248,.15);
@@ -110,22 +101,16 @@
   transition:.3s;
 }
 
-
 .tech span:hover{
   background:#38bdf8;
   color:#0f172a;
 }
-
-
-
 
 .project-buttons{
   display:flex;
   gap:15px;
   margin-top:20px;
 }
-
-
 
 .project-buttons a{
   flex:1;
@@ -137,25 +122,19 @@
   transition:.3s;
 }
 
-
-
 .project-buttons a:first-child{
   background:#38bdf8;
   color:#0f172a;
 }
 
-
 .project-buttons a:first-child:hover{
   background:#0ea5e9;
 }
-
-
 
 .project-buttons a:last-child{
   border:2px solid #38bdf8;
   color:#38bdf8;
 }
-
 
 .project-buttons a:last-child:hover{
   background:#38bdf8;
@@ -163,20 +142,15 @@
 }
 
 
-
-/* ==========================
-        Tablet Responsive
-========================== */
-
 @media(max-width:992px){
 
   .projects{
     padding:80px 6%;
   }
 
-
   .projects-title h2{
     font-size:36px;
+    margin-top: -25px;
   }
 
 
@@ -192,12 +166,6 @@
 
 }
 
-
-
-/* ==========================
-        Mobile Responsive
-========================== */
-
 @media(max-width:768px){
 
   .projects{
@@ -209,33 +177,28 @@
     margin-bottom:40px;
   }
 
-
   .projects-title h2{
     font-size:30px;
+    margin-top: -40px;
   }
-
 
   .projects-title p{
     font-size:15px;
   }
-
 
   .projects-container{
     grid-template-columns:1fr;
     gap:25px;
   }
 
-
   .project-card{
     padding:22px;
     border-radius:15px;
   }
 
-
   .project-card h3{
     font-size:21px;
   }
-
 
   .project-card p{
     font-size:14px;
@@ -243,28 +206,22 @@
     text-align:justify;
   }
 
-
   .project-card h4{
     font-size:16px;
   }
-
-
   .tech{
     gap:8px;
   }
-
 
   .tech span{
     padding:6px 12px;
     font-size:12px;
   }
 
-
   .project-buttons{
     flex-direction:column;
     gap:12px;
   }
-
 
   .project-buttons a{
     width:100%;
@@ -274,35 +231,22 @@
 }
 
 
-
-/* ==========================
-        Small Mobile
-========================== */
-
 @media(max-width:480px){
-
   .projects{
     padding:50px 4%;
   }
 
-
   .projects-title h2{
     font-size:26px;
   }
-
-
   .project-card{
     padding:18px;
   }
 
-
   .project-card h3{
     font-size:19px;
   }
-
-
   .project-card p{
     font-size:13px;
   }
-
 }
