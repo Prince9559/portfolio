@@ -95,6 +95,47 @@ function Projects() {
           </div>
         </div>
 
+        
+      
+      {/* StudioFlow */}
+      <div className="project-card">
+        <h3>🚀 StudioFlow</h3>
+
+        <p>
+          A full-stack studio management platform to manage clients, orders,
+          scripts, creators, shoot schedules, videos, payments, expenses, and
+          tasks with JWT authentication and role-based access.
+        </p>
+
+        <h4>Tech Stack</h4>
+
+        <div className="tech">
+          <span>React.js</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>JWT</span>
+          <span>REST API</span>
+        </div>
+
+        <h4>Demo Login</h4>
+        <p>
+          <strong>Email:</strong> prince@test.com
+          <br />
+          <strong>Password:</strong> 123456
+        </p>
+
+        <div className="project-buttons">
+          <a href="https://leadyfy-os-lemon.vercel.app/" target="_blank" rel="noreferrer">
+            Live Demo
+          </a>
+          <a href="https://github.com/Prince9559" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+
 
         <div className="project-card">
           <h3>🌐 Coaching Website</h3>
